@@ -20,11 +20,9 @@ RUN apt update \
 
 COPY requirements.txt .
 
-RUN pip install --prefix="/install" -r requirements.txt
+RUN pip install -r requirements.txt
 
 WORKDIR /loadgen
-
-#COPY --from=builder /install /usr/local
 
 # Add application code.
 COPY locustfile.py .
