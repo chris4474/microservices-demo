@@ -34,7 +34,7 @@ build:
     - linux/amd64
     - linux/arm64
   local:
-    useDockerCLI: false
+    useDockerCLI: true
     useBuildkit: true
 manifests:
   kustomize:
